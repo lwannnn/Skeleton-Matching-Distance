@@ -48,11 +48,11 @@ class GraphWassersteinDistance(nn.Module):
 
     def get_dist(self,mu,nu,C,A,mask=None):
         """
-        :param mu: 预测图的分布
-        :param nu: GT的分布
-        :param C: cost 矩阵
-        :param A: mask矩阵（k近邻，GTOT里的邻接矩阵）
-        :param mask: （未知）
+        :param mu: The distribution of Prediction
+        :param nu: The distribution of GT
+        :param C: cost metrix
+        :param A: mask metrix（knn）
+        :param mask
         :return:
         """
         u = torch.zeros_like(mu)
